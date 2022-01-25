@@ -17,10 +17,12 @@ export function Counter() {
   const [incrementAmount, setIncrementAmount] = useState('2');
 
   const incrementValue = Number(incrementAmount) || 0;
+  console.log("Render counter");
 
   return (
     <div>
       <div className={styles.row}>
+        <span className={styles.label}>Counter</span>
         <button
           className={styles.button}
           aria-label="Decrement value"
